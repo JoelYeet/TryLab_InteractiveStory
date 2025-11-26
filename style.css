@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+/* Fullscreen scene */
+#scene {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Exposition text at the top */
+.exposition {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+/* Next button at the bottom */
+#nextButton {
+  align-self: center;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 999px; /* fully rounded pill button */
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Pressed / hover state for nicer feel */
+#nextButton:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+#nextButton:active {
+  transform: scale(0.97);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
