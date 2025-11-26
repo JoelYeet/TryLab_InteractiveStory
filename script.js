@@ -26,7 +26,7 @@ const scenes = [
     bg: "scene6.jpg"
   },
   {
-    text: "7/7: How could my son scam me!, Mrs Lim thought to herself",
+    text: "7/7: How could my son scam me! Mrs Lim thought to herself",
     bg: "scene7.jpg"
   }
 ];
