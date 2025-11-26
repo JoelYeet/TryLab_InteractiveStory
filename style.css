@@ -12,7 +12,8 @@ html, body {
 
 /* Fullscreen scene container */
 #scene {
-  height: 100vh;
+  height: 100vh;     /* fallback for old browsers */
+  height: 100dvh;    /* modern Safari fix */
   width: 100%;
   background-size: cover;
   background-position: center;
