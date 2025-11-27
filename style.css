@@ -7,7 +7,7 @@
 
 html, body {
   height: 100%;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Fullscreen scene container */
@@ -46,7 +46,7 @@ html, body {
   font-size: 4vw; /* scales with viewport width */
   max-width: 90%;
   background: rgba(0, 0, 0, 0.4);
-  padding: 2vh 2vw;
+  padding: 2vh 4vw;
   border-radius: 8px;
   margin: 2vh auto 0 auto;
 }
@@ -56,6 +56,7 @@ html, body {
   align-self: center;
   padding: 2vh 6vw; /* scales with viewport */
   font-size: 4vw;
+  font-family: 'Montserrat', sans-serif;
   color: white;
   border: solid;
   border-color: rgb(84, 99, 99);
@@ -67,7 +68,7 @@ html, body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
   margin-bottom: 3vh;
-  padding: 5vw 8vw;
+  padding: 2vh 8vw;
 }
 
 /* Hover and active effects */
