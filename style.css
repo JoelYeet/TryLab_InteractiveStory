@@ -26,7 +26,7 @@ html, body {
 #fadeOverlay {
   position: absolute;
   inset: 0;
-  background: rgb(49, 49, 49);
+  background: rgb(61, 61, 61);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.35s ease;
@@ -56,15 +56,18 @@ html, body {
   align-self: center;
   padding: 2vh 6vw; /* scales with viewport */
   font-size: 4vw;
-  border: none;
+  color: white;
+  border: solid;
+  border-color: rgb(84, 99, 99);
   border-radius: 999px;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgb(92, 139, 158);
   backdrop-filter: blur(4px);
-  font-weight: 600;
+  font-weight: 400;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
   margin-bottom: 3vh;
+  padding: 5vw 8vw;
 }
 
 /* Hover and active effects */
