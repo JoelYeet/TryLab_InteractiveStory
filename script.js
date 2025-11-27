@@ -1,11 +1,11 @@
 const scenes = [
-  { text: "1/7: Mrs Lim receives a message late at night", bg: "scene1.jpg" },
-  { text: "2/7: The message appears to show her son in trouble", bg: "scene2.jpg" },
-  { text: "3/7: He asks her to withdraw money from her CPF", bg: "scene3.jpg" },
-  { text: "4/7: Somethings seems off about him, however Mrs Lim followed his instructions and transfered the funds to him", bg: "scene4.jpg" },
-  { text: "5/7: Days gone by and Mrs Lim patiently waits for her son to respond...", bg: "scene5.jpg" },
-  { text: "6/7: One day an SPF officer contacts her and inform that she was the victim of a scam", bg: "scene6.jpg" },
-  { text: "7/7: How could my son scam me! Mrs Lim thought to herself", bg: "scene7.jpg" },
+  { text: "1/7: Mrs Lim receives a message late at night.", bg: "scene1.jpg" },
+  { text: "2/7: The message seems to show her son is in trouble.", bg: "scene2.jpg" },
+  { text: "3/7: He asks her to withdraw money from her CPF account.", bg: "scene3.jpg" },
+  { text: "4/7: Something seems off about him, but Mrs Lim follows his instructions and transfers the funds.", bg: "scene4.jpg" },
+  { text: "5/7: Days go by as Mrs Lim patiently waits for her son to respond...", bg: "scene5.jpg" },
+  { text: "6/7: One day, an SPF officer contacts her and informs her that she was the victim of a scam.", bg: "scene6.jpg" },
+  { text: "7/7: 'How could my son scam me?' Mrs Lim thought to herself.", bg: "scene7.jpg" },
 ];
 
 let currentScene = 0;
