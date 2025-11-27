@@ -51,6 +51,10 @@ html, body {
   margin: 2vh auto 0 auto;
 }
 
+.exposition.textbob {
+  animation: textbob 3s ease-in-out infinite;
+}
+
 /* Next button at the bottom */
 #nextButton {
   align-self: center;
@@ -81,6 +85,23 @@ html, body {
   transform: scale(0.97);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
+
+#nextButton.buttonbob {
+  animation: buttonbob 5s ease-in-out infinite;
+}
+
+@keyframes buttonbob {
+  0%   { transform: translateY(0) scale(1); }
+  50%  { transform: translateY(0) scale(1.1); } 
+  100% { transform: translateY(0) scale(1); }
+}
+
+@keyframes textbob {
+  0%   { transform: translateY(0) scale(1); }
+  50%  { transform: translateY(-6px) scale(1.05); } /* move up + scale slightly */
+  100% { transform: translateY(0) scale(1); }
+}
+
 
 /* Media queries for tablets and desktops */
 @media (min-width: 768px) {

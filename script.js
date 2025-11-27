@@ -17,6 +17,9 @@ const textBoxEl = document.getElementById("textBox");
 const nextButtonEl = document.getElementById("nextButton");
 const fadeOverlay = document.getElementById("fadeOverlay");
 
+nextButtonEl.classList.add("buttonbob");
+textBoxEl.classList.add("textbob");
+
 // Preload images
 scenes.forEach(s => new Image().src = s.bg);
 
