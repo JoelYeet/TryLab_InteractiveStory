@@ -3,32 +3,32 @@
 const scenes = [
   {
     text: "1/7: Mrs Lim receives a message late at night",
-    bg: "scene1.jpg"
+    bg: "scene1.jpg",
   },
   {
     text: "2/7: The message appears to show her son in trouble",
-    bg: "scene2.jpg"
+    bg: "scene2.jpg",
   },
   {
     text: "3/7: He asks her to withdraw money from her CPF",
-    bg: "scene3.jpg"
+    bg: "scene3.jpg",
   },
   {
     text: "4/7: Somethings seems off about him, however Mrs Lim followed his instructions and transfered the funds to him",
-    bg: "scene4.jpg"
+    bg: "scene4.jpg",
   },
   {
     text: "5/7: Days gone by and Mrs Lim patiently waits for her son to respond...",
-    bg: "scene5.jpg"
+    bg: "scene5.jpg",
   },
   {
     text: "6/7: One day an SPF officer contacts her and inform that she was the victim of a scam",
-    bg: "scene6.jpg"
+    bg: "scene6.jpg",
   },
   {
     text: "7/7: How could my son scam me! Mrs Lim thought to herself",
-    bg: "scene7.jpg"
-  }
+    bg: "scene7.jpg",
+  },
 ];
 
 let currentScene = 0;
@@ -41,11 +41,25 @@ const nextButtonEl = document.getElementById("nextButton");
 loadScene(currentScene);
 
 function loadScene(index) {
-  textBoxEl.textContent = scenes[index].text;
-  sceneEl.style.backgroundImage = `url(${scenes[index].bg})`;
+   // Fade to black
+  fadeOverlay.style.opacity = 1;
+
+  setTimeout(() => {
+    // Change content when fully black
+    textBoxEl.textContent = scenes[index].text;
+    sceneEl.style.backgroundImage = `url(${scenes[index].bg})`;
+
+    // Fade back in
+    fadeOverlay.style.opacity = 0;
+  }, 350); // matches transition
 }
 
 nextButtonEl.addEventListener("click", () => {
+  nextButtonEl.disabled = true;
+  setTimeout(() => {
+    nextButtonEl.disabled = false;
+  }, 400);
+
   currentScene++;
 
   if (currentScene < scenes.length) {

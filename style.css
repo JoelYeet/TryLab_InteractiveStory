@@ -23,6 +23,22 @@ html, body {
   padding: 5vw 5vw 5vw 5vw; /* responsive padding */
 }
 
+#fadeOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgb(49, 49, 49);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  z-index: 5;
+}
+
+/* Make sure scene children sit above background but below overlay */
+#scene {
+  position: relative;
+  overflow: hidden;
+}
+
 /* Exposition text at the top */
 .exposition {
   text-align: center;
